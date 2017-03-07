@@ -36,7 +36,7 @@ var result = "";
     var date = $(this).find("td.time").text();
     var type = $(this).find("td.type").find("span.name").text();
     if(valid){
-        result += email + "," + date + "," + type + "," + url + "," + category + "<br/>";
+        result += email + "," + date + "," + type + "," + URL + "," + category + "<br/>";
     }
   });
   writeConsole(result);
