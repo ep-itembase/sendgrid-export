@@ -31,10 +31,12 @@ var result = "";
     var valid = true;
     var email = $(this).find("td.contact").find("span.email.email-link").text();
     valid = (typeof email !== 'null');
+    var date = $(this).find("td.url").text();
+    var date = $(this).find("td.category").text();
     var date = $(this).find("td.time").text();
     var type = $(this).find("td.type").find("span.name").text();
     if(valid){
-        result += email + "," + date + "," + type + "<br/>";
+        result += email + "," + date + "," + type + "," + url + "," + category + "<br/>";
     }
   });
   writeConsole(result);
