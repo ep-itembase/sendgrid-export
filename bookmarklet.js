@@ -34,7 +34,7 @@ var result = "";
     
     var category = $(this).find("td.category").text();
     	  
-    var linkURL = $(this).find("td.div.div.i").text();
+    var linkURL = $(this).find("td.div.div.i.url").text();
     var date = $(this).find("td.time").text();
     var type = $(this).find("td.type").find("span.name").text();
     if(valid){
