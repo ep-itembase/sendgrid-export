@@ -31,8 +31,9 @@ var result = "";
     var valid = true;
     var email = $(this).find("td.contact").find("span.email.email-link").text();
     valid = (typeof email !== 'null');
-    var linkURL = $(this).find("td.url").text();
+    
     var category = $(this).find("td.category").text();
+    var linkURL = $(this).find("td.url").text();
     var date = $(this).find("td.time").text();
     var type = $(this).find("td.type").find("span.name").text();
     if(valid){
