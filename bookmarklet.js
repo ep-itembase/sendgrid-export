@@ -33,7 +33,7 @@ var result = "";
     valid = (typeof email !== 'null');
     
     var category = $(this).find("td.category").text();
-    var linkURL = $(this).find("td.div.div.div.dl.dd.url").text();
+    var linkURL = $(this).find("td.div.div.div.url").text();
     var date = $(this).find("td.time").text();
     var type = $(this).find("td.type").find("span.name").text();
     if(valid){
