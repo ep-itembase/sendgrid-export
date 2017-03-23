@@ -33,11 +33,12 @@ var result = "";
     valid = (typeof email !== 'null');
     
     var category = $(this).find("td.category").text();
+    var boom + $(this).text();	  
     var linkURL = $(this).find("td.url").text();
     var date = $(this).find("td.time").text();
     var type = $(this).find("td.type").find("span.name").text();
     if(valid){
-        result += email + "," + date + "," + type + "," + linkURL + "," + category + "<br/>";
+        result += boom+","+email + "," + date + "," + type + "," + linkURL + "," + category + "<br/>";
     }
   });
   writeConsole(result);
